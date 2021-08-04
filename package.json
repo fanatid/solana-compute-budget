@@ -1,0 +1,8 @@
+{
+  "name": "burnt-auctions",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@project-serum/anchor-cli": "^0.11.0"
+  }
+}
