@@ -152,7 +152,6 @@ fn raymul_u128_uint(a: U128, b: U128) -> Option<U128> {
         .and_then(|v| v.checked_div(RAY_U128_UINT))
 }
 
-
 // Same as `calc_u128`
 fn calc_u256_uint(rate: U256, last_update_timestamp: U256, current_timestamp: U256) -> U256 {
     let mut result = RAY_U256_UINT;

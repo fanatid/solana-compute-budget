@@ -90,11 +90,17 @@ fn count_instructions() {
         current_timestamp: 1628088989,
     };
     let count_u128 = run_program(&program, &program_id, accounts, &data_u128.data());
-    println!("Instructions for call `u128_native` (iters: 1): {:?}", count_u128);
+    println!(
+        "Instructions for call `u128_native` (iters: 1): {:?}",
+        count_u128
+    );
 
     data_u128.count = 10;
     let count_u128 = run_program(&program, &program_id, accounts, &data_u128.data());
-    println!("Instructions for call `u128_native` (iters: 10): {:?}", count_u128);
+    println!(
+        "Instructions for call `u128_native` (iters: 10): {:?}",
+        count_u128
+    );
 
     let mut data_u128 = budget_instruction::U128Uint {
         count: 1,
@@ -103,11 +109,17 @@ fn count_instructions() {
         current_timestamp: 1628088989,
     };
     let count_u128 = run_program(&program, &program_id, accounts, &data_u128.data());
-    println!("Instructions for call `u128_uint` (iters: 1): {:?}", count_u128);
+    println!(
+        "Instructions for call `u128_uint` (iters: 1): {:?}",
+        count_u128
+    );
 
     data_u128.count = 10;
     let count_u128 = run_program(&program, &program_id, accounts, &data_u128.data());
-    println!("Instructions for call `u128_uint` (iters: 10): {:?}", count_u128);
+    println!(
+        "Instructions for call `u128_uint` (iters: 10): {:?}",
+        count_u128
+    );
 
     let mut data_u256 = budget_instruction::U256Uint {
         count: 1,
@@ -116,9 +128,15 @@ fn count_instructions() {
         current_timestamp: 1628088989,
     };
     let count_u256 = run_program(&program, &program_id, accounts, &data_u256.data());
-    println!("Instructions for call `u256_uint` (iters: 1): {:?}", count_u256);
+    println!(
+        "Instructions for call `u256_uint` (iters: 1): {:?}",
+        count_u256
+    );
 
     data_u256.count = 10;
     let count_u256 = run_program(&program, &program_id, accounts, &data_u256.data());
-    println!("Instructions for call `u256_uint` (iters: 10): {:?}", count_u256);
+    println!(
+        "Instructions for call `u256_uint` (iters: 10): {:?}",
+        count_u256
+    );
 }
